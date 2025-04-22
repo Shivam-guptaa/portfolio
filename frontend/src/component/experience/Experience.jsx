@@ -12,7 +12,7 @@ const Experience = () => {
   })
   
   const languages = [
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg", color: "#7f52ff" },
+    { src: "https://th.bing.com/th/id/OIP.jIqxhxWliJKp8l4b4U2XhAHaHa?rs=1&pid=ImgDetMain", color: "#7f52ff" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg", color: "#f0db4f" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", color: "#f89820" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg", color: "#4db33d" },
@@ -22,7 +22,7 @@ const Experience = () => {
   const tools = [
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg", color: "#1D76DB" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg", color: "#f34f29" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg", color: "#3ddc84" },
+    { src: "https://www.svgrepo.com/show/452183/cpp.svg", color: "#3ddc84" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg", color: "#ff6c37" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg", color: "#0078d7" },      
   ];
@@ -30,8 +30,8 @@ const Experience = () => {
   const frameWorks = [
     { src: "../../assets/icons8-express-js.svg", color: "#fff" },
     { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", color: "#61dafb" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg", color: "#6db33f" },
-    { src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg", color: "#ff2d20" },
+    { src: "https://cdn4.vectorstock.com/i/1000x1000/85/48/devops-symbol-and-icon-software-development-vector-32708548.jpg", color: "#6db33f" },
+    { src: "https://th.bing.com/th/id/OIP.e2Wc2adUMgEZTbQ4WM9PEwHaDS?w=900&h=400&rs=1&pid=ImgDetMain", color: "#ff2d20" },
   ];
 
   return (

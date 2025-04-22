@@ -102,3 +102,14 @@
     background-color: #0a66c2;
     border-radius: 15px;
 }
+
+.downloadSection {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.downloadButton:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}

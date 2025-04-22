@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import style from './Resume.module.css'
 import {motion} from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronUp, faCircleCheck, faAward, faRotate } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronUp, faCircleCheck, faAward, faRotate, faDownload } from '@fortawesome/free-solid-svg-icons'
+import GCV from '../../assets/GCV.pdf';
+
 const Resume = () => {
   const [projects, setProjects] = useState(true);
   const [expertise, setExpertise] = useState(true);
@@ -245,8 +247,45 @@ const Resume = () => {
               }
         </motion.div>
       </div>      
+        <motion.div 
+        className={style.downloadSection}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.a 
+          href={GCV}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={style.downloadButton}
+          whileHover={{ 
+            scale: 1.05,
+            backgroundColor: "#2c3e50",
+          }}
+          whileTap={{ scale: 0.95 }}
+          style={{
+            padding: '12px 24px',
+            backgroundColor: '#34495e',
+            color: 'white',
+            borderRadius: '10px',
+            textDecoration: 'none',
+            cursor: 'pointer',
+            fontWeight: '600',
+            fontSize: '16px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)'
+          }}
+        >
+          <FontAwesomeIcon icon={faDownload} />
+          Download Resume
+        </motion.a>
+      </motion.div>
+      
+      {/* Rest of your resume content */}
     </div>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;

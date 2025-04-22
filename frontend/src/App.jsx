@@ -7,6 +7,7 @@ import LeetCodeProfile from './component/profile/LeetCodeProfile';
 import MainLayout from './MainLayout';
 import { AnimatePresence } from 'framer-motion';
 import GeeksForGeeks from './component/profile/GeeksForGeeks';
+import Certificates from './component/certificates/Certificates';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/" element={<About />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/certificate" element={<Certificates />} />
           </Route>
           <Route path="/leetcode" element={<LeetCodeProfile/>} />
           <Route path='/gfg' element={<GeeksForGeeks/>} />
