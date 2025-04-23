@@ -82,12 +82,68 @@
     border-radius: 15px;
 }
 .projectDetail{
+    position: relative;
     padding: 15px;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     border: 2px solid #000;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.projectDetail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.projectDetail:hover::before {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.projectDetail > * {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.projectDetail:hover > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.projectYear {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Individual project backgrounds */
+.projectDetail:nth-child(1) {
+    background-image: url('../../assets/Project1.jpeg');
+}
+
+.projectDetail:nth-child(3) {
+    background-image: url('../../assets/Project4.jpg');
+}
+
+.projectDetail:nth-child(5) {
+    background-image: url('../../assets/Project3.jpg');
+}
+
+.projectDetail:nth-child(7) {
+    background-image: url('../../assets/Project2.jpg');
 }
 .projectYear{
     display: flex;
@@ -112,4 +168,21 @@
 .downloadButton:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
+}
+
+.projectDetail > div > div {
+  color: white !important;
+}
+
+.projectDetail i {
+  color: #ffffff !important;
+}
+
+.projectDetail a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.projectDetail a:hover {
+  text-decoration: underline;
 }
