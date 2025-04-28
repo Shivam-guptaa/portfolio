@@ -1,6 +1,6 @@
 # Portfolio
 
-This is a personal portfolio website for Arshdev Singh, showcasing his skills, projects, and achievements in software development. The portfolio includes detailed profiles from various coding platforms such as LeetCode and GeeksforGeeks, highlighting my problem-solving abilities and coding proficiency.
+This is a personal portfolio website for Shivam Gupta, showcasing his skills, projects, and achievements in software development. The portfolio includes detailed profiles from various coding platforms such as LeetCode and GeeksforGeeks, highlighting my problem-solving abilities and coding proficiency.
 
 ## Features
 
